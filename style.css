@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --headerpad: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1240px;
+    border: 1px solid yellowgreen;
+    margin: 0 0 auto;
+
+}
+
+/* main {
+    /* ekhane kaaj ache .. display flex diye centre kore dibo==display: flex;
+    justify-content: center;
+ */
+/* padding-left: 150px;
+padding-right: 125px;
+;
+padding-top: 100px;
+font-family: 'Poppins';
+}
+
+*/
+.top-container {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #161616;
+    border-radius: 30px;
+    /* margin-left: 151px; */
+    /* margin-top: 104px; */
+    /* apatoto pore muche debo border  */
+    border: 2px red solid;
+    /* display: none; */
+    margin-bottom: 10px;
+
+
+}
+
+/* greatest show on earth related box */
+.heading-container {
+    border-right: 1px solid #DD0000;
+    /* apatoto pore muche debo border right */
+    display: flex;
+    /* grid-template-rows: repeat(3, 1fr); */
+    /* background-color: blue; */
+    width: 50%;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.worldcup-heading {
+    /* border: 3px solid yellowgreen; */
+    position: absolute;
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    /* justify-content: center;
+    align-items: center; */
+    justify-content: start;
+    row-gap: 10px;
+
+}
+
+/* .heading-watch button {
+    font-size: medium;
+    font-weight: 800;
+    background-color: ;
+} */
+.heading-title {
+    /* width: 531px;
+    height: 240px; */
+    /* background-color: whitesmoke; */
+    /* font-weight: 700; */
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+.heading-watch button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 25px;
+    gap: 10px;
+
+
+    background: #DD0000;
+    border-radius: 5px;
+}
+
+
+/* cover pic related box */
+.banner-pic {
+    width: 50%;
+}
+
+.banner-pic img {
+    width: 100%;
+
+}
+
+/* .............. style with Mid container : blogs transfer etc
+
+....................*/
+.mid-container {
+    /* background-color: rgb(126, 141, 112); */
+    display: flex;
+    justify-content: space-between;
+}
+
+.match-group-blog {
+    background-color: yellow;
+    width: 25%;
+    height: 40vh;
+    border: 2px solid yellowgreen;
+    /* late change the border */
+    display: flex;
+    flex-direction: column;
+    /* grid-template-rows: repeat(3, 1fr); */
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+    row-gap: 2vw;
+}
+
+.match-group-blog button {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    /* padding: 16px 25px; */
+    width: 15vw;
+    height: 3.5vw;
+    font-size: 5vw;
+    color: blue;
+
+
+    /* left: 170px; */
+    /* top: 1044px; */
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+#red-button {
+    background-color: #DD0000;
+}
+
+.anchor-style {
+    text-decoration: none;
+    color: initial;
+}
+
+.match-group-blog>div>button {
+
+    /* font-family: 'Poppins'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.transfer-part {
+    width: 75%;
+    background-color: #2e1d0c;
+    /* pore muchbo*/
+    /* width: 312px;
+    height: 362px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* row-gap: 24px;
+    column-gap: 24px; */
+    justify-content: center;
+    gap: 3vh;
+}
+
+
+.transfer-news>.image img {
+    width: 100%;
+}
+
+.button-title-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.news-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 143px;
+    height: 26;
+}
+
+.invisible-viewall {
+    display: none;
+    justify-content: center;
+}
+
+/* foooterrrrrrr footerrrr */
+.footer {
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-details {
+    display: flex;
+    column-gap: 3vh;
+}
+
+/* --------------------------------------MATCH-PAGE-------------------------------------------------- */
+.match-mid-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.all-match {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+    background-color: #053a24;
+}
+
+.match-flag {
+    display: flex;
+    width: 100%;
+}
+
+.schedule {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* media query-------------media query--------media query--------media query--------media query-------- */
+@media screen and (min-width: 577px) and (max-width:700px) {
+    .transfer-part {
+        background-color: red;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .tab-view {
+        display: none;
+    }
+
+    .invisible-viewall {
+        display: flex;
+    }
+
+    .mid-container {
+        flex-direction: column;
+
+    }
+
+    .match-group-blog {
+        background-color: yellow;
+        width: 100%;
+        height: auto;
+        border: 2px solid yellowgreen;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* height: ; */
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        font-size: x-small;
+
+        row-gap: 2vw;
+    }
+
+    .match-group-blog button {
+        font-size: 1.2em;
+        color: yellow;
+        width: 100%;
+        height: 100%
+    }
+
+
+}
+
+/* ---------------------Mobaile viewwwwwwwwwwwwwwwwww-------------- */
+
+@media screen and (max-width:576px) {
+
+    .top-container {
+        display: block;
+    }
+
+    .heading-container {
+        width: 100%;
+    }
+
+    .banner-pic {
+        width: 100%;
+    }
+
+    .mid-container {
+        display: block;
+    }
+
+    .match-group-blog {
+        width: 100%;
+    }
+
+    .match-group-blog button {
+        width: 100%;
+        height: 100%;
+    }
+
+    .transfer-part {
+        /* only to check-----background-color: rgb(179, 255, 0); */
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .footer-details {
+        display: block;
+    }
+
+
+}
